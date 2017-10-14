@@ -1,8 +1,7 @@
 {
-  "name": "@stencil/starter",
-  "private": true,
+  "name": "@wu-components/wu-grid",
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "Responsive grid component",
   "files": [
     "dist/"
   ],
@@ -26,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
+    "url": "git+https://github.com/seanwuapps/wu-grid"
   },
-  "author": "Ionic Team",
+  "author": "Sean Wu Apps",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/seanwuapps/wu-grid"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/seanwuapps/wu-grid",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
