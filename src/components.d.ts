@@ -4,8 +4,6 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import '@stencil/router';
-
 import { MyName as MyName } from './components/my-name/my-name';
 
 interface HTMLMyNameElement extends MyName, HTMLElement {
@@ -29,8 +27,63 @@ declare global {
   namespace JSXElements {
       export interface MyNameAttributes extends HTMLAttributes {
         
-          first?: any,
-          last?: any
+          first?: string,
+          last?: string
+      }
+  }
+}
+
+import { WuCol as WuCol } from './components/wu-col/wu-col';
+
+interface HTMLWuColElement extends WuCol, HTMLElement {
+}
+declare var HTMLWuColElement: {
+  prototype: HTMLWuColElement;
+  new (): HTMLWuColElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "wu-col": HTMLWuColElement;
+  }
+  interface ElementTagNameMap {
+      "wu-col": HTMLWuColElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "wu-col": JSXElements.WuColAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface WuColAttributes extends HTMLAttributes {
+        
+          basis?: string
+      }
+  }
+}
+
+import { WuRow as WuRow } from './components/wu-row/wu-row';
+
+interface HTMLWuRowElement extends WuRow, HTMLElement {
+}
+declare var HTMLWuRowElement: {
+  prototype: HTMLWuRowElement;
+  new (): HTMLWuRowElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "wu-row": HTMLWuRowElement;
+  }
+  interface ElementTagNameMap {
+      "wu-row": HTMLWuRowElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "wu-row": JSXElements.WuRowAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface WuRowAttributes extends HTMLAttributes {
+        
       }
   }
 }

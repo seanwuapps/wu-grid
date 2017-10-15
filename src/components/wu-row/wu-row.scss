@@ -1,0 +1,13 @@
+wu-row{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+@media screen and (max-width: 767px) {
+  wu-row{
+    flex-direction: column;  
+  }
+}

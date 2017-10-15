@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['wu-grid'] }
+    { components: ['wu-row', 'wu-col'] }
   ]
 };
 
